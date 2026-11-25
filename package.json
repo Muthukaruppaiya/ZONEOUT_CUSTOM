@@ -1,0 +1,25 @@
+{
+  "name": "zoneout-custom",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gallery": "node scripts/gallery.mjs",
+    "gallery:import": "node scripts/gallery.mjs import --set main",
+    "prebuild": "node scripts/gallery.mjs",
+    "fleet:import": "node scripts/gallery.mjs import --set fleet"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.24",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.18.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "vite": "^7.2.4"
+  }
+}
